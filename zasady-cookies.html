@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="cs-CZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zásady cookies | Mobilní WC Janák</title>
+<meta name="description" content="Jak Mobilní WC Janák používá cookies a měření na webu.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/entry.css">
+<link rel="stylesheet" href="assets/css/inline.css">
+<link rel="stylesheet" href="assets/css/navrh.css?v=3">
+<script src="assets/js/mereni.js" defer></script>
+<script src="assets/js/navrh.js" defer></script>
+</head>
+<body data-consent="unset">
+<div id="app" class="isolate">
+
+<header class="bg-default/75 backdrop-blur border-b border-default h-(--ui-header-height) sticky top-0 z-50">
+  <div class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 h-full">
+    <a href="index.html" aria-label="Mobilní WC Janák" class="focus-visible:outline-primary shrink-0 flex items-center">
+      <img src="assets/img/logo-janak.svg" alt="Mobilní WC Janák" class="h-12 w-auto">
+    </a>
+    <button type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle class="rounded-md font-medium inline-flex items-center text-sm gap-1.5 text-default hover:bg-elevated active:bg-elevated focus:outline-none p-1.5 lg:hidden -me-1.5">
+      <span class="iconify i-lucide:menu shrink-0 size-5" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobilní menu" hidden>
+  <a href="index.html">Domů</a>
+  <a href="index.html#kontakt">Kontakt</a>
+</nav>
+
+<main class="policy">
+  <h1 class="policy__title">Zásady cookies</h1>
+  <p class="policy__p">Cookies jsou malé soubory, které web ukládá do vašeho prohlížeče. Na tomto webu je používáme jen podle vaší volby.</p>
+
+  <h2 class="policy__h">Jak funguje souhlas</h2>
+  <ul class="policy__ul">
+    <li>Při první návštěvě se zobrazí banner s volbou „Přijmout měření“ nebo „Odmítnout“.</li>
+    <li>Dokud nerozhodnete, nenastavujeme žádné analytické ani marketingové cookies a neodesíláme události měření.</li>
+    <li>Při odmítnutí se tyto cookies nenastaví a události se neodešlou.</li>
+    <li>Volbu můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce.</li>
+  </ul>
+
+  <h2 class="policy__h">Přehled cookies a úložišť</h2>
+  <div class="policy__tbl"><table><thead><tr><th>Název</th><th>Typ</th><th>Kdo</th><th>Účel</th><th>Doba platnosti</th><th>Kategorie</th></tr></thead><tbody>
+    <tr><td>wc-janak-consent</td><td>úložiště prohlížeče (ne cookie)</td><td>tento web</td><td>pamatuje si vaši volbu v banneru</td><td>do smazání v prohlížeči</td><td>nezbytné</td></tr>
+    <tr><td colspan="6"><span class="ov" title="Otevřený bod – ověřit před spuštěním">[seznam doplníme, až bude nasazené měření návštěvnosti/reklamy]</span></td></tr>
+  </tbody></table></div>
+
+  <h2 class="policy__h">Jak cookies smazat</h2>
+  <p class="policy__p">Cookies a úložiště webu můžete smazat v nastavení svého prohlížeče. Smazání volby v banneru znovu vyvolá dotaz na souhlas.</p>
+
+  <h2 class="policy__h">Kontakt</h2>
+  <p class="policy__p">Dotazy k cookies směřujte na instalater.janak@seznam.cz nebo na +420 773 146 244. Více o zpracování osobních údajů je v <a href="ochrana-soukromi.html">zásadách ochrany osobních údajů</a>.</p>
+</main>
+
+<footer>
+  <div class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-4 flex items-center justify-center flex-col gap-1">
+    <p class="text-muted text-sm">Copyright © 2026 Mobilní WC Janák</p>
+    <p class="text-muted text-sm"><a href="index.html" class="text-primary hover:underline">Zpět na hlavní stránku</a></p>
+  </div>
+</footer>
+
+<div class="call-bar" role="region" aria-label="Rychlý kontakt">
+  <a href="tel:+420773146244" data-tel-loc="policy" class="call-bar__call">Zavolat</a>
+  <a href="index.html#kontakt" data-cta="policy_poptavka" class="call-bar__form">Poptávka</a>
+</div>
+
+<div class="cookie-banner" role="dialog" aria-label="Cookies a měření" hidden>
+  <div class="cookie-banner__text">
+    <p class="font-medium text-highlighted">Cookies a měření</p>
+    <p class="text-sm text-muted">Měříme, odkud lidé přicházejí na web, kliknutí na telefon a průběh vyplňování formuláře bez obsahu polí. Bez vašeho souhlasu nic nesledujeme.</p>
+    <p class="text-xs text-muted"><a href="zasady-cookies.html" class="text-primary hover:underline">Zásady cookies</a> · <a href="ochrana-soukromi.html" class="text-primary hover:underline">Ochrana soukromí</a></p>
+  </div>
+  <div class="cookie-banner__btns">
+    <button type="button" data-consent-set="denied" class="cookie-btn cookie-btn--ghost">Odmítnout</button>
+    <button type="button" data-consent-set="granted" class="cookie-btn">Přijmout měření</button>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

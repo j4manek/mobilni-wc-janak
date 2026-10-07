@@ -1,0 +1,168 @@
+/* Doplňky k původnímu designu. Barvy a rozměry bereme z tokenů (inline.css / entry.css),
+   stejný základ jako u webu janak-instalaterstvi.cz. */
+
+/* Vlastní (světlejší) modrá pro Mobilní WC Janák – odlišná od tmavší modré instalatérství.
+   Přepisuje Tailwind proměnné --color-blue-*, na kterých visí bg-blue-600/text-blue-600/
+   border-blue-600 atd. (entry.css je používá přes var(), takže přepis zafunguje všude).
+   shadow-blue-200 má barvu zapečenou přímo v --tw-shadow-color, proto se přepisuje zvlášť. */
+:root {
+  --color-blue-50: #f0f9ff;
+  --color-blue-100: #e0f2fe;
+  --color-blue-200: #bae6fd;
+  --color-blue-300: #7dd3fc;
+  --color-blue-400: #38bdf8;
+  --color-blue-500: #38bdf8;
+  --color-blue-600: #0ea5e9;
+  --color-blue-700: #0284c7;
+  --color-blue-800: #075985;
+  --color-blue-900: #0c4a6e;
+  --color-blue-950: #082f49;
+}
+.shadow-blue-200 { --tw-shadow-color: #bae6fd; }
+
+/* Otevřené body k potvrzení majitelem – před spuštěním zmizí */
+.ov {
+  display: inline-block;
+  background: #fff1a8;
+  color: #5c4400;
+  border-radius: 4px;
+  padding: 0 0.35em;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Lišta volání na mobilu: telefon je na dosah palce i při scrollování */
+.call-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: var(--ui-bg);
+  border-top: 1px solid var(--ui-border);
+}
+.call-bar a {
+  flex: 1;
+  text-align: center;
+  border-radius: 0.375rem;
+  padding: 0.7rem 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.call-bar__call {
+  background: var(--ui-color-primary-600);
+  color: #fff;
+}
+.call-bar__form {
+  color: var(--ui-color-primary-600);
+  box-shadow: inset 0 0 0 1px var(--ui-color-primary-600);
+}
+body {
+  padding-bottom: 4.5rem;
+}
+@media (min-width: 1024px) {
+  .call-bar { display: none; }
+  body { padding-bottom: 0; }
+}
+
+/* Mobilní menu */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 1rem;
+  border-bottom: 1px solid var(--ui-border);
+  background: var(--ui-bg);
+}
+.mobile-nav[hidden] { display: none; }
+.mobile-nav a {
+  padding: 0.6rem 0.25rem;
+  font-weight: 500;
+  color: var(--ui-text-muted);
+}
+.mobile-nav a:hover { color: var(--ui-color-primary-600); }
+@media (min-width: 1024px) {
+  .mobile-nav { display: none !important; }
+}
+
+/* Fokus z klávesnice ať je vidět */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--ui-color-primary-600);
+  outline-offset: 2px;
+}
+
+section.grid { grid-template-columns: minmax(0, 1fr); }
+
+/* Utility, které zdrojový Tailwind bundle nemá vygenerované */
+.gap-10 { gap: 2.5rem; }
+.py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.max-w-xl { max-width: 36rem; }
+.hover\:underline:hover { text-decoration: underline; }
+@media (min-width: 40rem) {
+  .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sm\:p-8 { padding: 2rem; }
+  .sm\:w-auto { width: auto; }
+}
+@media (min-width: 48rem) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.z-20 { z-index: 20; }
+.self-start { align-self: start; }
+.h-\[720px\] { height: 720px; }
+
+/* Sekce na hlavní stránce */
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+@media (min-width: 64rem) {
+  .lg\:py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* Stránky zásad: čitelný text v úzkém sloupci */
+.policy { max-width: 48rem; margin: 0 auto; padding: 2.5rem 1rem 3rem; color: var(--ui-text); }
+.policy__title { font-size: 2rem; font-weight: 700; line-height: 1.2; color: var(--ui-text-highlighted); margin-bottom: 1rem; }
+.policy__h { font-size: 1.25rem; font-weight: 700; color: var(--ui-text-highlighted); margin: 2rem 0 0.75rem; }
+.policy__p, .policy__ul { margin: 0.75rem 0; line-height: 1.6; }
+.policy__ul { padding-left: 1.25rem; list-style: disc; }
+.policy__ul li { margin: 0.35rem 0; }
+.policy a { color: var(--ui-color-primary-600); text-decoration: underline; }
+
+/* Banner cookies: nad lištou volání na mobilu, vpravo dole na desktopu */
+.cookie-banner {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 5rem;
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--ui-bg);
+  border: 1px solid var(--ui-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner__btns { display: flex; gap: 0.5rem; justify-content: flex-end; flex-wrap: wrap; }
+.cookie-banner__text { display: grid; gap: 0.25rem; }
+.cookie-btn {
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--ui-color-primary-600);
+  color: #fff;
+}
+.cookie-btn--ghost {
+  background: transparent;
+  color: var(--ui-text);
+  box-shadow: inset 0 0 0 1px var(--ui-border);
+}
+@media (min-width: 1024px) {
+  .cookie-banner { left: auto; right: 1rem; bottom: 1rem; width: 28rem; }
+}
