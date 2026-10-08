@@ -40,7 +40,7 @@
       </g>
     </g>
 
-  <text x="142" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="20" fill="#ffffff" letter-spacing="1.5">JANÁK</text>
+  <text x="142" y="134" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="20" fill="#ffffff" letter-spacing="1.5">JANAK</text>
   <rect x="56" y="172" width="108" height="124" rx="10" fill="url(#door)" stroke="#0284c7" stroke-width="2.5"/>
   <path d="M100 198h20c6 0 10 6 9 12l-7 56a12 12 0 0 1-12 10a12 12 0 0 1-12-10l-7-56c-1-6 3-12 9-12Z" fill="#0284c7"/>
   <path d="M96 192h28" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/>

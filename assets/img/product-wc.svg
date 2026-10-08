@@ -45,7 +45,7 @@
       </g>
     </g>
 
-  <text x="150" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="21" fill="#ffffff" letter-spacing="1.5">JANÁK</text>
+  <text x="150" y="162" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="21" fill="#ffffff" letter-spacing="1.5">JANAK</text>
   <rect x="58" y="200" width="104" height="106" rx="10" fill="url(#door)" stroke="#0284c7" stroke-width="2.5"/>
   <circle cx="110" cy="232" r="13" fill="#0284c7"/>
   <path d="M91 276 Q110 246 129 276 Z" fill="#0284c7"/>
