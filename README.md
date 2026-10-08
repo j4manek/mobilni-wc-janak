@@ -113,6 +113,28 @@ odstín `#0ea5e9` (Tailwind "sky"), ne jejich přesný hex, aby se weby nepletly
   modrou (`#0ea5e9`) a na nahrávání `logo-janak.png` jako reference (ne textový dohad loga).
   Čeká se na výsledky od Jonyho.
 
+## Update 2026-10-08: foto hero banner (festival) podle vzoru konkurence
+
+Jony poslal screenshot hero banneru konkurenční firmy (fotka ze stavby + jejich kabina s logem
+přes foto + bílý nápis). Udělal jsem obdobu, ale s festivalem místo stavby (sedí líp k naší
+"jsme i instalatéři" story) a naší kabinkou/logem:
+
+- **Fotka**: `assets/img/hero-festival.jpg` – stock foto z Pexels (fotografka Wendy Wei,
+  photo ID 2342409), licence Pexels = volné pro komerční i nekomerční použití bez nutnosti
+  uvádět autora. <span class="ov">[i tak doporučuju před ostrým spuštěním ověřit aktuální
+  licenční podmínky na pexels.com/license, pro jistotu]</span>
+- Kabinka (`product-wc.svg`) je v popředí vpravo dole, stejně jako na referenčním screenshotu.
+- Text sedí na tmavé poloprůhledné kartě (`.hero-photo__panel`), ne přímo na fotce – vyzkoušel
+  jsem napřed gradient přes celou fotku, ale kontrast textu byl nespolehlivý podle toho, co
+  zrovna bylo na fotce pod textem (world. jasná zeleň stromů). Karta je spolehlivější a funguje
+  stejně dobře na mobilu i desktopu.
+- `.dark` třída na obsahovém wrapperu automaticky přepne `text-highlighted`/`text-muted`/atd.
+  na světlé varianty z existujícího design systému (entry.css má vestavěný dark mode), takže
+  nebylo potřeba ručně přebarvovat každý prvek v hero sekci zvlášť.
+
+Pokud by Jony chtěl i vlastní reálnou fotku (ne stock), stačí nahradit
+`assets/img/hero-festival.jpg` – rozměry/ořez (object-fit: cover) se přizpůsobí automaticky.
+
 ## Ověření
 
 Prototyp jsem otestoval přes Playwright (desktop 1440px, mobil 390px): hero, karty nabídky,

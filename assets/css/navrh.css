@@ -18,6 +18,47 @@
   --color-blue-900: #0c4a6e;
   --color-blue-950: #082f49;
 }
+
+/* Hero fotka na pozadí (festival) s naší kabinkou v popředí a tmavým přechodem pro čitelnost
+   textu – `.dark` na obsahovém wrapperu přepne text-highlighted/text-muted/atd. na světlé
+   varianty z entry.css, takže není potřeba ručně přebarvovat každý prvek zvlášť. Foto: Pexels
+   (Wendy Wei), licence Pexels – volné pro komerční použití. */
+.hero-photo { min-height: calc(100vh - var(--ui-header-height)); }
+.hero-photo__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-photo__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(6, 12, 26, 0.3);
+}
+.hero-photo__panel {
+  background: rgba(6, 12, 26, 0.78);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  padding: 2.5rem;
+}
+@media (max-width: 40rem) {
+  .hero-photo__panel { padding: 1.5rem; }
+}
+.hero-photo__wc {
+  position: absolute;
+  z-index: 2;
+  right: 4%;
+  bottom: 0;
+  width: 240px;
+  filter: drop-shadow(0 20px 18px rgba(0, 0, 0, 0.35));
+}
+@media (min-width: 90rem) {
+  .hero-photo__wc { width: 300px; right: 8%; }
+}
 .shadow-blue-200 { --tw-shadow-color: #bae6fd; }
 
 /* Otevřené body k potvrzení majitelem – před spuštěním zmizí */

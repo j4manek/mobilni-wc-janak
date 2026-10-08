@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/css/entry.css">
 <link rel="stylesheet" href="assets/css/inline.css">
-<link rel="stylesheet" href="assets/css/navrh.css?v=8">
+<link rel="stylesheet" href="assets/css/navrh.css?v=11">
 <script src="assets/js/mereni.js" defer></script>
 <script src="assets/js/navrh.js" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Mobilní WC Janák", "telephone": "+420773146244", "email": "instalater.janak@seznam.cz", "address": {"@type": "PostalAddress", "streetAddress": "Struha 794", "addressLocality": "Vamberk", "postalCode": "517 54", "addressCountry": "CZ"}, "url": "https://www.mobilni-wc-janak.cz/", "areaServed": [{"@type": "AdministrativeArea", "name": "Královéhradecký kraj"}, {"@type": "AdministrativeArea", "name": "Pardubický kraj"}]}</script>
@@ -60,9 +60,12 @@
 <main class="min-h-[calc(100vh-var(--ui-header-height))]">
 
   <!-- HERO -->
-  <section class="my-8 lg:my-0">
-    <div class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 min-h-[calc(100vh-var(--ui-header-height))] grid grid-cols-1 items-center gap-8">
-      <div class="space-y-8 max-w-2xl">
+  <section class="hero-photo relative isolate overflow-hidden">
+    <img src="assets/img/hero-festival.jpg" alt="" aria-hidden="true" class="hero-photo__bg">
+    <div class="hero-photo__overlay" aria-hidden="true"></div>
+    <img src="assets/img/product-wc.svg" alt="" aria-hidden="true" class="hero-photo__wc hidden lg:block">
+    <div class="dark relative z-10 w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 min-h-[calc(100vh-var(--ui-header-height))] grid grid-cols-1 items-center gap-8">
+      <div class="space-y-8 max-w-2xl hero-photo__panel">
         <div class="space-y-4">
           <h1 class="text-4xl md:text-6xl font-bold text-highlighted leading-tight"><span class="text-primary relative">Mobilní WC</span> a hygienické zázemí tam, kde je zrovna potřeba.</h1>
           <p class="text-xl text-muted max-w-lg">Pronajmeme a přivezeme mobilní toalety a umývárny na festival, stavbu nebo soukromou oslavu – jsme zároveň instalatéři.</p>
