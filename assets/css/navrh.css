@@ -48,17 +48,6 @@
 @media (max-width: 40rem) {
   .hero-photo__panel { padding: 1.5rem; }
 }
-.hero-photo__wc {
-  position: absolute;
-  z-index: 2;
-  right: 4%;
-  bottom: 0;
-  width: 240px;
-  filter: drop-shadow(0 20px 18px rgba(0, 0, 0, 0.35));
-}
-@media (min-width: 90rem) {
-  .hero-photo__wc { width: 300px; right: 8%; }
-}
 .shadow-blue-200 { --tw-shadow-color: #bae6fd; }
 
 /* Otevřené body k potvrzení majitelem – před spuštěním zmizí */

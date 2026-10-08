@@ -135,6 +135,31 @@ přes foto + bílý nápis). Udělal jsem obdobu, ale s festivalem místo stavby
 Pokud by Jony chtěl i vlastní reálnou fotku (ne stock), stačí nahradit
 `assets/img/hero-festival.jpg` – rozměry/ořez (object-fit: cover) se přizpůsobí automaticky.
 
+## Update 2026-10-08 (2): skutečná fotka WC místo ilustrace
+
+Jony trval na tom, že kabina v hero musí být vidět a musí být **reálná fotka, ne ilustrace**
+(opakovaná zpětná vazba). Vektorové SVG ilustrace (`product-*.svg`) zůstávají na kartách v
+sekci Nabídka – pro hero banner jsem místo nich udělal skutečný foto-kompozit:
+
+1. **Zdrojová fotka**: Pexels, fotograf Ardalan Hamedani, photo ID 28759904 – reálná červená
+   mobilní toaleta (značka "Maple Leaf Disposal") v přírodním prostředí. Licence Pexels.
+2. **Přebarveno na naši modrou** (`#0ea5e9`) – cílený HSV hue-shift jen na sytě červené pixely
+   (práh na saturaci a odstín), bílá střecha/šedé kování/zeleň pozadí zůstaly beze změny.
+   Script: viz git historie (`assets/img/hero-wc-real.jpg` je už hotový výsledek, zdrojový
+   skript se neukládal do repa).
+3. **Nálepka "Maple Leaf Disposal + telefon" nahrazena naší** – vytvořená nálepka s maskotem,
+   "JANAK", "MOBILNÍ WC" a telefonem, vložená přes měkký stín přesně na místo původní nálepky.
+4. **Oříznuto** na poměr stran vhodný pro hero (kabina vpravo, prostor na stromy/zeleň vlevo
+   pro textový panel).
+
+`assets/img/hero-festival.jpg` (dřívější fotka davu na festivalu) je smazaná, nahrazená touto.
+Textový panel (`.hero-photo__panel`) zůstal stejný – funguje nezávisle na tom, jaká fotka je
+na pozadí.
+
+**Otevřený bod**: stejně jako u festivalové fotky doporučuju před ostrým nasazením ověřit
+aktuální podmínky licence Pexels (pexels.com/license) – changes v politice jsou vzácné, ale
+stojí za kontrolu u webu, který bude mít reálný provoz.
+
 ## Ověření
 
 Prototyp jsem otestoval přes Playwright (desktop 1440px, mobil 390px): hero, karty nabídky,
