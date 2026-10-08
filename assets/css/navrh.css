@@ -96,26 +96,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 section.grid { grid-template-columns: minmax(0, 1fr); }
 
-/* Rotující produkt v hero sekci (náhrada za plovoucí bubliny) – plynulá 2D otočka o 360°
-   (jako odznak/placka). Zkoušel jsem 3D rotateY s druhou zrcadlenou vrstvou (otočka "jako by"
-   šlo o fyzický objekt), ale backface-visibility se v testu chovala nespolehlivě napříč
-   prohlížeči (text byl v druhé půlce otočky zrcadlený). 2D rotace je spolehlivá všude a text
-   na kabině zůstává vždy čitelný (jen se otáčí spolu s objektem). Respektuje
-   prefers-reduced-motion. */
-.spin-360 {
-  width: 280px;
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 24px 20px rgba(15, 23, 42, 0.18));
-}
-@media (prefers-reduced-motion: no-preference) {
-  .spin-360 { animation: spin360 8s linear infinite; }
-}
-@keyframes spin360 {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 /* Utility, které zdrojový Tailwind bundle nemá vygenerované */
 .gap-10 { gap: 2.5rem; }
 .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
