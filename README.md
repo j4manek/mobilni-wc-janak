@@ -178,6 +178,19 @@ našel skutečné zdroje:
 Klíčové poučení: plné vyplněné tvary (solid fill) čte oko mnohem líp než tenké obrysové linky
 na malé ploše – to byla hlavní chyba předchozích verzí, ne množství detailu.
 
+## Update 2026-10-09 (2): piktogramy ve stylu wcmarket.cz
+
+Jony poslal přímo zdrojový web (wcmarket.cz/mobilni-wc-cena) jako referenci podruhé – šel jsem
+se tam přímo podívat a vytáhl přes Playwright skutečný SVG kód jejich ikon (dvojitá silueta
+dveří kabiny, tenká linka, nádrž/pisoárová silueta). Jejich přesný kód jsem **nekopíroval**
+(je to jejich vlastní grafika), ale nakreslil vlastní ikony se stejným vizuálním jazykem –
+stejná silueta dveří, stejná síla čáry, jen v naší modré místo bílé (jejich web má tmavé
+pozadí, náš světlé karty).
+
+Předchozí plné (vyplněné) piktogramy z Google Material Icons byly samy o sobě v pořádku
+(skutečné standardy), ale neseděly stylově k tomu, co měl Jony na mysli – tenký obrys, ne
+plná barva.
+
 ## Ověření
 
 Prototyp jsem otestoval přes Playwright (desktop 1440px, mobil 390px): hero, karty nabídky,
