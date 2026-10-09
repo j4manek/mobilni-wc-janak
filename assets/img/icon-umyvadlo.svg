@@ -1,31 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" stroke="#0ea5e9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <!-- water tank -->
-  <path d="M38 44 V116 Q38 128 80 128 Q122 128 122 116 V44"/>
-  <ellipse cx="80" cy="44" rx="42" ry="13" stroke-width="3.5"/>
-  <ellipse cx="80" cy="44" rx="42" ry="13" stroke-width="2" opacity="0.4" transform="translate(0,6)"/>
-  <!-- fill cap -->
-  <rect x="68" y="28" width="24" height="10" rx="3" stroke-width="2.5"/>
+  <path d="M42 44 V104 Q42 114 80 114 Q118 114 118 104 V44"/>
+  <ellipse cx="80" cy="44" rx="38" ry="12" stroke-width="3.5"/>
   <!-- taps -->
-  <path d="M58 18 V36 q0 6 6 6" stroke-width="3.5"/>
-  <path d="M102 18 V36 q0 6 -6 6" stroke-width="3.5"/>
+  <path d="M60 20 V36 q0 6 6 6" stroke-width="4"/>
+  <path d="M100 20 V36 q0 6 -6 6" stroke-width="4"/>
   <!-- water droplets -->
-  <path d="M64 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
-  <path d="M96 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
-  <!-- basin -->
-  <path d="M26 134 Q80 158 134 134" stroke-width="3.5"/>
-  <path d="M30 134 Q34 172 80 172 Q126 172 130 134" stroke-width="3.5"/>
-  <path d="M68 150 Q80 156 92 150" stroke-width="2.2" opacity="0.6"/>
-  <!-- drain -->
-  <circle cx="80" cy="163" r="4" stroke-width="2.2"/>
-  <!-- soap dispenser -->
-  <rect x="18" y="118" width="10" height="20" rx="3" stroke-width="2.5"/>
-  <path d="M23 118 v-6" stroke-width="2.2"/>
-  <!-- paper towel roll -->
-  <rect x="132" y="112" width="12" height="22" rx="3" stroke-width="2.5"/>
-  <line x1="138" y1="118" x2="138" y2="128" stroke-width="2"/>
-  <!-- legs with cross brace -->
-  <line x1="44" y1="166" x2="34" y2="206" stroke-width="4"/>
-  <line x1="116" y1="166" x2="126" y2="206" stroke-width="4"/>
-  <line x1="52" y1="188" x2="108" y2="188" stroke-width="2.2" opacity="0.6"/>
+  <path d="M66 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
+  <path d="M94 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
+  <!-- large, clear basin -->
+  <path d="M24 122 Q80 150 136 122" stroke-width="4.5"/>
+  <path d="M28 122 Q33 166 80 166 Q127 166 132 122" stroke-width="4.5"/>
+  <circle cx="80" cy="158" r="4.5" stroke-width="2.5"/>
+  <!-- legs -->
+  <line x1="46" y1="160" x2="36" y2="206" stroke-width="4.5"/>
+  <line x1="114" y1="160" x2="124" y2="206" stroke-width="4.5"/>
   <ellipse cx="80" cy="211" rx="50" ry="4.5" stroke-width="2" opacity="0.4"/>
 </svg>

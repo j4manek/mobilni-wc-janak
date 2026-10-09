@@ -2,7 +2,6 @@
   <!-- roof -->
   <path d="M18 52 Q80 12 142 52 L142 66 L18 66 Z"/>
   <path d="M30 58 Q80 30 130 58" stroke-width="2.5"/>
-  <!-- vent pipe -->
   <path d="M46 52 V38 Q46 32 52 32 Q58 32 58 38 V52"/>
   <!-- body -->
   <rect x="22" y="66" width="116" height="140" rx="10"/>
@@ -10,21 +9,13 @@
   <rect x="33" y="78" width="9" height="13" rx="2"/>
   <rect x="47" y="78" width="9" height="13" rx="2"/>
   <rect x="61" y="78" width="9" height="13" rx="2"/>
-  <!-- door frame -->
-  <path d="M68 206 V98 Q68 76 80 76 Q92 76 92 98 V206" stroke-width="3"/>
-  <!-- hinges -->
-  <rect x="68" y="108" width="7" height="14" rx="1.5"/>
-  <rect x="68" y="168" width="7" height="14" rx="1.5"/>
-  <!-- handle -->
-  <rect x="84" y="140" width="9" height="13" rx="2"/>
-  <!-- molded panel curves -->
-  <path d="M74 150 Q80 144 86 150" stroke-width="2.2"/>
-  <path d="M74 162 Q80 156 86 162" stroke-width="2.2"/>
-  <!-- toilet silhouette on door -->
-  <g stroke-width="3">
-    <rect x="73" y="176" width="14" height="9" rx="2"/>
-    <path d="M71 185 q-2 0 -2 5 v7 q0 4 4 4 h16 q4 0 4 -4 v-7 q0 -5 -2 -5 Z"/>
+  <!-- door frame (simple) -->
+  <path d="M66 206 V98 Q66 76 80 76 Q94 76 94 98 V206" stroke-width="3"/>
+  <!-- large, clear toilet -->
+  <g stroke-width="4">
+    <rect x="66" y="108" width="28" height="16" rx="3"/>
+    <path d="M62 124 q-4 0 -4 8 v26 q0 8 8 8 h28 q8 0 8 -8 v-26 q0 -8 -4 -8 Z"/>
+    <path d="M58 166 q22 10 44 0" stroke-width="3"/>
   </g>
-  <!-- ground shadow -->
   <ellipse cx="80" cy="212" rx="48" ry="5" stroke-width="2" opacity="0.4"/>
 </svg>
