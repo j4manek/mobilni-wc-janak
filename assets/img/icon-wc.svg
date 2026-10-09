@@ -1,9 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
-  <path d="M20 140 V40 Q20 15 50 15 Q80 15 80 40 V140" fill="none" stroke="#0ea5e9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="20" y1="92" x2="80" y2="92" stroke="#0ea5e9" stroke-width="5" stroke-linecap="round"/>
-  <!-- toilet silhouette inside the cabin -->
-  <g stroke="#0ea5e9" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="41" y="100" width="18" height="12" rx="2"/>
-    <path d="M38 112 q-3 0 -3 7 v10 q0 5 5 5 h20 q5 0 5 -5 v-10 q0 -7 -3 -7 Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" stroke="#0ea5e9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- roof -->
+  <path d="M18 52 Q80 12 142 52 L142 66 L18 66 Z"/>
+  <path d="M30 58 Q80 30 130 58" stroke-width="2.5"/>
+  <!-- vent pipe -->
+  <path d="M46 52 V38 Q46 32 52 32 Q58 32 58 38 V52"/>
+  <!-- body -->
+  <rect x="22" y="66" width="116" height="140" rx="10"/>
+  <!-- vents -->
+  <rect x="33" y="78" width="9" height="13" rx="2"/>
+  <rect x="47" y="78" width="9" height="13" rx="2"/>
+  <rect x="61" y="78" width="9" height="13" rx="2"/>
+  <!-- door frame -->
+  <path d="M68 206 V98 Q68 76 80 76 Q92 76 92 98 V206" stroke-width="3"/>
+  <!-- hinges -->
+  <rect x="68" y="108" width="7" height="14" rx="1.5"/>
+  <rect x="68" y="168" width="7" height="14" rx="1.5"/>
+  <!-- handle -->
+  <rect x="84" y="140" width="9" height="13" rx="2"/>
+  <!-- molded panel curves -->
+  <path d="M74 150 Q80 144 86 150" stroke-width="2.2"/>
+  <path d="M74 162 Q80 156 86 162" stroke-width="2.2"/>
+  <!-- toilet silhouette on door -->
+  <g stroke-width="3">
+    <rect x="73" y="176" width="14" height="9" rx="2"/>
+    <path d="M71 185 q-2 0 -2 5 v7 q0 4 4 4 h16 q4 0 4 -4 v-7 q0 -5 -2 -5 Z"/>
   </g>
+  <!-- ground shadow -->
+  <ellipse cx="80" cy="212" rx="48" ry="5" stroke-width="2" opacity="0.4"/>
 </svg>

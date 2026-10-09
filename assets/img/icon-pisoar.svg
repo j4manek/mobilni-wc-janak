@@ -1,9 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
-  <path d="M34 140 V58 Q34 20 50 20 Q66 20 66 58 V140" fill="none" stroke="#0ea5e9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="28" y1="140" x2="72" y2="140" stroke="#0ea5e9" stroke-width="5" stroke-linecap="round"/>
-  <!-- urinal basin silhouette inside the screen -->
-  <g stroke="#0ea5e9" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M44 60h12c4 0 6 4 6 8l-4 36a8 8 0 0 1-16 0l-4-36c0-4 2-8 6-8Z"/>
-    <path d="M42 54h16" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 220" stroke="#0ea5e9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- screen body -->
+  <path d="M34 206 V88 Q34 34 70 34 Q106 34 106 88 V206"/>
+  <!-- top rim -->
+  <path d="M38 40 Q70 18 102 40" stroke-width="2.5"/>
+  <!-- side panel lines -->
+  <path d="M34 110 Q70 100 106 110" stroke-width="2.2"/>
+  <path d="M34 150 Q70 140 106 150" stroke-width="2.2"/>
+  <!-- vent slits top -->
+  <rect x="58" y="46" width="7" height="11" rx="2"/>
+  <rect x="75" y="46" width="7" height="11" rx="2"/>
+  <!-- urinal fixture -->
+  <g stroke-width="3">
+    <path d="M56 86h28c6 0 9 5 8 11l-6 56a14 14 0 0 1-28 0l-6-56c-1-6 2-11 8-11Z"/>
+    <path d="M52 78h36" stroke-width="2.5"/>
+    <path d="M70 98 V130" stroke-width="2.2" opacity="0.6"/>
   </g>
+  <!-- flush pipe -->
+  <path d="M70 34 V18" stroke-width="2.5"/>
+  <circle cx="70" cy="14" r="4" stroke-width="2.5"/>
+  <!-- base -->
+  <path d="M24 206 H116" stroke-width="3"/>
+  <path d="M30 206 V214" stroke-width="2.5"/>
+  <path d="M110 206 V214" stroke-width="2.5"/>
+  <ellipse cx="70" cy="214" rx="46" ry="4.5" stroke-width="2" opacity="0.4"/>
 </svg>
