@@ -1,15 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 220" stroke="#0ea5e9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <!-- screen body (simple) -->
-  <path d="M34 206 V88 Q34 34 70 34 Q106 34 106 88 V206"/>
-  <path d="M38 40 Q70 18 102 40" stroke-width="2.5"/>
-  <!-- large, clear urinal fixture -->
-  <g stroke-width="4.5">
-    <path d="M50 80h40c8 0 12 7 11 15l-8 72a18 18 0 0 1-36 0l-8-72c-1-8 3-15 11-15Z"/>
-    <path d="M45 72h50" stroke-width="3.5"/>
-  </g>
-  <path d="M70 34 V18" stroke-width="2.5"/>
-  <circle cx="70" cy="14" r="4" stroke-width="2.5"/>
-  <!-- base -->
-  <path d="M24 206 H116" stroke-width="3"/>
-  <ellipse cx="70" cy="214" rx="46" ry="4.5" stroke-width="2" opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0ea5e9">
+<rect x="8.5" y="1" width="7" height="2.5" rx="0.8"/>
+<path d="M7.2 4.2h9.6c1.1 0 1.9 1 1.7 2.1l-1.9 11.2c-.4 2.2-2.3 3.8-4.6 3.8s-4.2-1.6-4.6-3.8L5.5 6.3c-.2-1.1.6-2.1 1.7-2.1Z"/>
+<rect x="10.5" y="4.2" width="3" height="3.5" fill="#ffffff"/>
 </svg>

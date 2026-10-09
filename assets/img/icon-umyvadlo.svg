@@ -1,19 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 220" stroke="#0ea5e9" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <!-- water tank -->
-  <path d="M42 44 V104 Q42 114 80 114 Q118 114 118 104 V44"/>
-  <ellipse cx="80" cy="44" rx="38" ry="12" stroke-width="3.5"/>
-  <!-- taps -->
-  <path d="M60 20 V36 q0 6 6 6" stroke-width="4"/>
-  <path d="M100 20 V36 q0 6 -6 6" stroke-width="4"/>
-  <!-- water droplets -->
-  <path d="M66 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
-  <path d="M94 46 q2.5 5 0 8 q-2.5 -3 0 -8Z" fill="#0ea5e9" stroke="none"/>
-  <!-- large, clear basin -->
-  <path d="M24 122 Q80 150 136 122" stroke-width="4.5"/>
-  <path d="M28 122 Q33 166 80 166 Q127 166 132 122" stroke-width="4.5"/>
-  <circle cx="80" cy="158" r="4.5" stroke-width="2.5"/>
-  <!-- legs -->
-  <line x1="46" y1="160" x2="36" y2="206" stroke-width="4.5"/>
-  <line x1="114" y1="160" x2="124" y2="206" stroke-width="4.5"/>
-  <ellipse cx="80" cy="211" rx="50" ry="4.5" stroke-width="2" opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0ea5e9">
+<path d="M11 1h2v3.2c0 1 .8 1.8 1.8 1.8h.7a1 1 0 0 1 0 2h-.7a3.8 3.8 0 0 1-3.8-3.8V1Z"/>
+<circle cx="8.5" cy="9.5" r="1"/>
+<path d="M3.5 13c0-1 .7-1.5 1.5-1.5h14c.8 0 1.5.5 1.5 1.5v1.5c0 3.3-2.7 6-6 6h-5c-3.3 0-6-2.7-6-6V13Z"/>
+<rect x="3.5" y="15.2" width="17" height="1.6" rx="0.8"/>
 </svg>

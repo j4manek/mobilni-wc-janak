@@ -160,6 +160,24 @@ na pozadí.
 aktuální podmínky licence Pexels (pexels.com/license) – changes v politice jsou vzácné, ale
 stojí za kontrolu u webu, který bude mít reálný provoz.
 
+## Update 2026-10-09: piktogramy podle skutečných standardů
+
+Předchozí dva pokusy o piktogramy (jednoduchý obrys, pak detailnější obrys) nevypadaly dobře –
+moc tenkých čar vedle sebe se na malé ploše slilo do nečitelné změti. Místo dalšího hádání jsem
+našel skutečné zdroje:
+
+- **Mobilní WC**: oficiální piktogram Google Material Icons „wc" (stejný typ značky jako na
+  dveřích veřejných toalet).
+- **Mobilní WC pro invalidy**: oficiální „International Symbol of Access" (ikona vozíčkáře),
+  taky z Material Icons – stejná ikona, jakou používá ISO 7001 a skutečné bezbariérové značení.
+  Obě pod licencí Apache 2.0 (ikony Google), volně použitelné.
+- **Mobilní pisoár** a **Mobilní umyvadlo**: pro tyhle neexistuje žádný celosvětový standard
+  (pisoár jako produkt nemá vlastní piktogram), takže jsem je domaloval ve stejném plném
+  (vyplněném, ne obrysovém) stylu, aby to vizuálně sedělo k těm dvěma oficiálním.
+
+Klíčové poučení: plné vyplněné tvary (solid fill) čte oko mnohem líp než tenké obrysové linky
+na malé ploše – to byla hlavní chyba předchozích verzí, ne množství detailu.
+
 ## Ověření
 
 Prototyp jsem otestoval přes Playwright (desktop 1440px, mobil 390px): hero, karty nabídky,
