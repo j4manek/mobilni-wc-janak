@@ -1,15 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 22 25 50" fill="none" stroke="#0ea5e9" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="37.5" cy="28" r="1.6" fill="#0ea5e9" stroke="none"/>
-  <path d="M37 29.6 Q35.8 33 33.5 35.5"/>
-  <path d="M26 38 Q26 36 28 36 L41 36 Q43 36 43 38 L43 48 Q43 58.5 34.5 63.5 Q26 58.5 26 48 Z"/>
-  <path d="M28.5 39 L40.5 39"/>
-  <path d="M32 63.5 L32 66.5 Q32 68 34.5 68 Q37 68 37 66.5 L37 63.5"/>
-  <g fill="#0ea5e9" stroke="none">
-    <circle cx="31.5" cy="49.5" r="0.7"/>
-    <circle cx="34.5" cy="49.5" r="0.7"/>
-    <circle cx="37.5" cy="49.5" r="0.7"/>
-    <circle cx="31.5" cy="52.3" r="0.7"/>
-    <circle cx="34.5" cy="52.3" r="0.7"/>
-    <circle cx="37.5" cy="52.3" r="0.7"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 90" fill="none" stroke="#0ea5e9" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M34.5 4 V13"/>
+  <circle cx="34.5" cy="4" r="2" fill="#0ea5e9" stroke="none"/>
+  <path d="M24 19C24 15 27 13 31 13H38C42 13 45 15 45 19L42.5 56C42.5 63 39 68 34.5 68C30 68 26.5 63 26.5 56Z"/>
+  <path d="M26 24H43"/>
 </svg>
