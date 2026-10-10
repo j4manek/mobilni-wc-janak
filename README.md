@@ -213,3 +213,31 @@ kotvách mimo `#sluzby`).
   ochrana-soukromi.html) – dosavadní e-mail patřil instalatérství, Mobilní WC dostane
   vlastní.
 - IČO zůstává jako `[doplnit IČO]` – beze změny, čeká se na přidělení/doplnění.
+
+## Update 2026-10-10 (2): oprava neklikatelných tlačítek (reálný bug, ne jen vizuál)
+
+Jony chtěl ověřit prokliky na formulář a telefon „všude" – testoval jsem to ale skutečným
+Playwright kliknutím (ne jen screenshotem) a narazil jsem na dvě chybějící Tailwind utility
+třídy v předkompilovaném CSS bundlu (ten je „odlehčený" jen o třídy použité na sesterském webu
+instalatérství, takže co tam nebylo, tu chybí):
+
+1. **`.z-10` neexistovala v CSS vůbec.** Tlačítka „Zavolejte" a „Nezávazná poptávka" v hero
+   sekci měla být nad tmavým `.hero-photo__overlay` (ten má `z-index:1`), ale obalový `div`
+   s `z-10` se bez definice choval jako `z-index:auto` → overlay byl nad tlačítky a **blokoval
+   kliknutí v každém prohlížeči a na každé velikosti obrazovky**. Vizuálně to vypadalo v pořádku
+   (overlay je jen jemné ztmavení), takže to předchozí screenshot-QA nezachytilo.
+2. **`.sm\:inline-flex` neexistovala.** Telefonní tlačítko v hlavičce (`hidden sm:inline-flex`)
+   tak zůstávalo `display:none` natrvalo i na desktopu – nikdy se nezobrazilo, natož aby šlo
+   kliknout.
+
+Oprava: doplnil jsem obě chybějící utility do `assets/css/navrh.css` (`.z-10 { z-index: 10 }`
+a `.sm\:inline-flex { display: inline-flex }` v existujícím `@media (min-width: 40rem)` bloku),
+stejný vzor jako u ostatních ručně doplněných utilit v tom souboru.
+
+Ověření: skriptem jsem prošel **všech 24 proklik/tel odkazů na stránce** (header, hero, 4×
+karta nabídky, sekce Kontakt, sticky lišta na mobilu, mobilní rozbalovací menu) a u každého
+viditelného odkazu potvrdil přes `elementFromPoint`, že na jeho souřadnicích skutečně leží on
+sám, ne nějaký prvek nad ním. K tomu reálné Playwright kliky (ne `force: true`) na hero tlačítko
+a hlavičkový telefon na desktopu (1280px) a na odkaz v mobilním menu (390px) – všechny doputovaly
+na `#kontakt` bez chyby. `.call-bar` (sticky lišta) a `.mobile-nav` jsou správně schované na
+desktopu (`min-width: 1024px`) – to je záměr, ne bug.
