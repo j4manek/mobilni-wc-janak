@@ -198,3 +198,18 @@ mobilní menu, sticky lišta volání, cookie banner i právní stránky se vykr
 bez chyb v konzoli. Doplnil jsem `scroll-mt-[var(--ui-header-height)]` na kotvy sekcí – bez
 toho menu scrollovalo pod sticky hlavičku (stejný neduh by měl i původní web na analogických
 kotvách mimo `#sluzby`).
+
+## Update 2026-10-10: finalizace obsahu podle Jonyho pokynů
+
+- Pracovní doba nastavena natvrdo na **Po–Pá 8:00–18:00** (hero + Kontakt sekce), nahradila
+  placeholder `[doplnit majitelem]`.
+- Odstraněny `[ověřit]` značky u všech 4 produktových karet a u kraje působnosti (Jony
+  potvrdil, že obsah je správně).
+- Adresa firmy (Struha 794, Vamberk) zatím **schovaná** – pryč ze sekce Oblast, z Kontaktu
+  i z JSON-LD strukturovaných dat. Zůstala jen v `ochrana-soukromi.html` jako `[ověřit]`
+  placeholder, protože mobilní WC firma teprve řeší, jestli bude mít stejné sídlo.
+- Odstraněn blok „Transparentní ceny" z „Proč si vybrat nás" – ceník se zatím neuvádí.
+- E-mail vyměněn za placeholder `[doplnit e-mail]` na všech místech (Kontakt, JSON-LD,
+  ochrana-soukromi.html) – dosavadní e-mail patřil instalatérství, Mobilní WC dostane
+  vlastní.
+- IČO zůstává jako `[doplnit IČO]` – beze změny, čeká se na přidělení/doplnění.
